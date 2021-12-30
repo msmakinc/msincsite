@@ -1,0 +1,14 @@
+* {
+    background-color: black;
+	cursor: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+header img {
+    width: 240px;
+    height: 240px;
+}

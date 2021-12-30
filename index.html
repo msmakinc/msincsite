@@ -1,226 +1,149 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
-
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Windows</title>
+    <link rel="stylesheet" href="/css/main.css">
 
+    <!--* Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+<!--* Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+<!--* MDB -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet">
 
-    <!-- ===============================================-->
-    <!--    Document Title-->
-    <!-- ===============================================-->
-    <title>MS Site</title>
-
-
-    <!-- ===============================================-->
-    <!--    Favicons-->
-    <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
-
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
-    <link href="assets/css/theme.css" rel="stylesheet" />
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-      body {
-        font-family: 'Nunito', sans-serif;
-      }
-      /* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    -webkit-border-radius: 1.5px;
--moz-border-radius: 1.5px;
-border-radius: 1.5px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(97, 96, 96);
-    -webkit-border-radius: 1.5px;
--moz-border-radius: 1.5px;
-border-radius: 1.5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-    </style>
-
-  </head>
-
-
-  <body>
-
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
-    <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block navbar-klean" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href=""> <img class="me-3 d-inline-block" src="assets/img/gallery/logo.png" alt="" /></a>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto pt-2 pt-lg-0 font-base">
-              <li class="nav-item px-2"><a class="nav-link fw-medium active" aria-current="page" href="">Главная</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="music-video">Музыка и видео</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="#apps-games">Игры и приложения</a></li>
-              <li class="nav-item px-2"><a class="nav-link" href="other">Другое</a></li>
+</head>
+<body>
+    
+<!--* Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="">
+          <img
+            src="img/logo.png"
+            height="60"
+            loading="lazy"
+          />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="">Главная</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              BSOD
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="bsod/win11/">Windows 11</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="bsod/win10/">Windows 10</a>
+              </li>
             </ul>
-          </div>
-        </div>
-      </nav>
-      <section id="home">
-        <div class="bg-holder d-none d-md-block bg-size" style="background-image:url(assets/img/illustrations/hero.png);background-position:right bottom;">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="bg-holder" style="background-image:url(assets/img/illustrations/heroheader-bg.png);background-position:center;background-size:contain;">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-9 col-lg-8 py-8 text-sm-start text-center">
-              <h1 class="fw-bold display-4 fs-4 fs-lg-6 fs-xxl-7 text-gradient">MS (Mak) <br> <span id="autotexttype"></span></h1>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-
-
-<br><br><br><br><br><br><br><br><br>
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-0 circle-blend circle-blend-right circle-warning" id="service">
-
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7 col-xxl-5 mx-auto text-center py-7"></div>
-          </div>
-          <div class="bg-holder" style="background-image:url(assets/img/illustrations/service.png);background-position:bottom center;background-size:contain;">
-          </div>
-          <!--/.bg-holder-->
-<div class="gg">
-          <div class="row flex-center" id="apps-games">
-            <center><h1 class="fw-bold display-4 fs-4 fs-lg-6 fs-xxl-7 text-gradient">Приложения и игры:</h1></center><br><br>
-            <div class="col-xl-9">
-              <div class="row justify-content-center circle">
-                <div class="col-md-4 mb-4">
-                  <div class="card card-bg h-100 px-4 px-md-2 px-lg-3 px-xxl-4 pt-4">
-                    <div class="text-center"><img src="assets/img/gallery/jasonkil.png">
-                      <div class="card-body text-center text-md-start">
-                        <center><a href="//msmak2accaunt.github.io/jasonkil" target="_blank" class="btn btn-light shadow-klean order-0"><span class="text-gradient fw-bold">Играть</span></a></center>
-                        <a></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
-      
-      <br><br><br><br><br><br>
-
-      <section class="pb-0 pt-6">
-        <div class="bg-holder" style="background-image:url(assets/img/illustrations/footer-bg.png);background-position:center;background-size:cover;">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row justify-content-lg-between circle-blend-right circle-danger">
-            <div class="col-6 col-sm-4 col-lg-auto mb-3">
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="mb-2 color-white"><a class="btn btn-light shadow-klean order-0" href="newyear">До нового года</a></li>
-              </ul>
-            </div>
-            <div class="col-9 col-sm-6 col-lg-auto mb-3">
-              <h5 class="text-600 mb-3 fw-bold">Подпишитесь:</h5>
-              <ul class="list-unstyled list-inline my-3">
-                <li class="list-inline-item"><a class="text-decoration-none" href="//www.facebook.com/groups/344844197328478"><img class="list-social-icon" src="assets/img/icons/facebook.svg" alt="" width="25" /></a></li>
-                <li class="list-inline-item"><a class="text-decoration-none" href="//www.youtube.com/channel/UCnScUkMuci6Ky2JnyUhF7ng"><img class="list-social-icon" src="assets/img/icons/youtube.svg" alt="" width="25" /></a></li>
-              </ul>
-            </div>
-            <div class="col-9 col-sm-6 col-lg-auto mb-3">
-              <br>
-            </div>
-          </div>
-          <hr class="text-100 mb-0" />
-          <div class="row justify-content-md-between justify-content-evenly py-3">
-            <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
-              <p class="fs--1 my-2 fw-bold">&copy;2021-2022 MS Inc. Все права защищены.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Обновления
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="update/win11/">Windows 11</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="update/win10/">Windows 10</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Загрузки
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="startup/win11/">Windows 11</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="startup/win10/">Windows 10</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav><br><br><br><br>
+  <!--* /Navbar -->
 
 
 
-    <!-- ===============================================
-           JavaScripts
-     =================================================== -->
-    <script src="vendors/@popperjs/popper.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/is/is.min.js"></script>
-    <script src="//polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
-    <script src="vendors/feather-icons/feather.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script>
-      feather.replace();
-    </script>
-    <script>
- $(document).ready(function(){
-    $("#gg").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});
-    </script>
-    <script src="assets/js/theme.js"></script>
-    <script src="assets/js/AutoTyping.js"></script>
-    <script>
-      const myText = new AutoTyping({
+  <center><h1 class="mb-3">Пранкуйте друзей фэйковыми обновления, BSODы и загрузки Windows*</h1>
+<h2 class="mb-3">Но для начала, зайдите в полноэкранный режим (F11).</h2>
+<h6 class="mb-3">*Сейчас только доступен Windows 10, 11. Но скоро будет и другие ОС.</h6>
+</center>
+  
 
-id: 'autotexttype', 
 
-typeText: ['любит программировать.', 'начинающий ютубер.'] 
 
-}).init();
-    </script>
+<!--* Footer -->
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022,
+      <a class="text-dark" href="//msmakinc.github.io/msincsite">MS Inc.</a>
+    </div>
+  </footer>
+<!--* /Footer -->
 
-    <link href="//fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
-  </body>
 
+
+
+    <!--* MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+</body>
 </html>

@@ -1,0 +1,21 @@
+* {
+	background-color: #126FA8;
+	cursor: none;
+	color: white;
+	font-family: Segoe UI Light;
+	font-weight: lighter;
+	-moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.l {
+padding: 400px;
+padding-top: -10px;
+}
+
+.l h2 {
+    font-size: 25px;
+}
